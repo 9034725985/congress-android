@@ -13,6 +13,11 @@ Use the [Github Issues page](http://github.com/sunlightlabs/congress/issues) for
 Release Checklist
 -----------------
 
+Final dev check:
+
+* Tested on enough emulators to feel confident?
+* Leave any debug stuff commented out or in? (also avoid ever having to do this even temporarily)
+
 Code changes:
 
 * Bump the android:versionCode and android:versionName in AndroidManifest.xml
@@ -20,6 +25,8 @@ Code changes:
 * Change the android:app_version_older in strings.xml to what's appropriate
 * Update the changelog data in arrays.xml to what's appropriate
 * Commit changes, add tag in git for version "vX.X.X" where X.X.X is the android:versionName
+  - `git tag -a -m "Tagging vX.X.X" vX.X.X`
+  - `git push --tags`
 
 Then, release work:
 
